@@ -1,5 +1,6 @@
 # Django_REST_API_study
 Django REST API 스터디를 위한 repository입니다.
+예제 파일 또한 포함되어 있습니다. 
 
 ## 스터디 진행 방식
 
