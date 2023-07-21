@@ -16,7 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from todo.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('todo/', TodosAPIView.as_view()),
+    path('todo/<int:pk>/', TodoAPIView.as_view()),
 ]
+
+# 왜 여기서 url을 써야하는거임? 앱 디렉토리에서 하면 안됨?
